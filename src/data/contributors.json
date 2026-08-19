@@ -1,0 +1,63 @@
+[
+  {
+    "id": "1",
+    "name": "Alex Chen",
+    "githubUsername": "alexchen",
+    "role": "Full Stack Engineer",
+    "bio": "Passionate open-source contributor focused on Next.js, React, and TypeScript tooling. Love building fast, accessible web applications and mentoring junior developers in the community.",
+    "skills": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js"],
+    "socials": {
+      "github": "https://github.com/alexchen",
+      "linkedin": "https://linkedin.com/in/alexchen",
+      "portfolio": "https://alexchen.dev"
+    }
+  },
+  {
+    "id": "2",
+    "name": "Sarah Jenkins",
+    "githubUsername": "sarahjenkins",
+    "role": "UI/UX & Frontend Developer",
+    "bio": "Crafting beautiful, accessible web experiences. Specializing in component design systems, micro-interactions, CSS architecture, and human-centered design principles for modern web platforms. Always excited to collaborate on creative open-source design systems and frontend component libraries for open source tools.",
+    "skills": ["React", "Tailwind CSS", "UI/UX", "Figma", "Design Systems"],
+    "socials": {
+      "github": "https://github.com/sarahjenkins"
+    }
+  },
+  {
+    "id": "3",
+    "name": "Marcus Vance",
+    "githubUsername": "marcusvance",
+    "role": "DevOps & Cloud Architect",
+    "bio": "Automating deployments, building CI/CD pipelines, and managing Kubernetes infrastructure. Active contributor to cloud-native open source tools and developer automation.",
+    "skills": ["Docker", "Kubernetes", "CI/CD", "Go", "AWS"],
+    "socials": {
+      "github": "https://github.com/marcusvance",
+      "linkedin": "https://linkedin.com/in/marcusvance"
+    }
+  },
+  {
+    "id": "4",
+    "name": "Priya Sharma",
+    "githubUsername": "priyasharma",
+    "role": "Frontend Developer",
+    "bio": "Building accessible web interfaces and contributing to open-source docs and localization. Enthusiastic about web performance, clean code, and inclusive developer communities.",
+    "skills": ["React", "TypeScript", "Accessibility", "GraphQL", "Next.js"],
+    "socials": {
+      "github": "https://github.com/priyasharma",
+      "portfolio": "https://priyasharma.io"
+    }
+  },
+  {
+    "id": "5",
+    "name": "David Kwan",
+    "githubUsername": "davidkwan",
+    "role": "Backend Engineer",
+    "bio": "Distributed systems nerd and API design enthusiast. Building scalable backend services, Rust microservices, and databases for high-throughput applications.",
+    "skills": ["Node.js", "TypeScript", "PostgreSQL", "Go", "GraphQL"],
+    "socials": {
+      "github": "https://github.com/davidkwan",
+      "linkedin": "https://linkedin.com/in/davidkwan",
+      "portfolio": "https://davidkwan.tech"
+    }
+  }
+]
