@@ -31,11 +31,10 @@ export default function FilterBar({
   filteredCount,
   displayCountOverride,
 }: FilterBarProps) {
-  // WORKSHOP STARTER ISSUE #3:
+  // WORKSHOP STARTER ISSUE #3 BUG:
   // When clearing search input via the 'X' button or backspacing,
   // `effectiveCount` uses a stale cached override if searchQuery was set,
   // causing the count badge to display an out-of-sync number when search is cleared.
-  // FIX FOR WORKSHOP PR: Always use `filteredCount` directly instead of checking stale fallback logic!
   const countToDisplay =
     searchQuery === "" && displayCountOverride !== null && displayCountOverride !== undefined
       ? displayCountOverride

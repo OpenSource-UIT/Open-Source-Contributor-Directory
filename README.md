@@ -35,7 +35,7 @@ Make sure you have Node.js (v18.x or higher) and npm installed.
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/Open-Source-Contributor-Directory.git
+   git clone https://github.com/OpenSource-UIT/Open-Source-Contributor-Directory.git
    cd Open-Source-Contributor-Directory
    ```
 
@@ -63,6 +63,4 @@ We welcome all contributions! Whether you want to add your own profile card or t
 
 ---
 
-## 📄 License
 
-This project is open-source and available under the [MIT License](LICENSE).

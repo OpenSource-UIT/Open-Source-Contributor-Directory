@@ -9,7 +9,7 @@ Welcome! 🎉 We are excited to have you contribute to the **Open Source Contrib
 ### 1. Fork & Clone the Repository
 First, fork this repository to your GitHub account, then clone it to your local machine:
 ```bash
-git clone https://github.com/YOUR_USERNAME/Open-Source-Contributor-Directory.git
+git clone https://github.com/OpenSource-UIT/Open-Source-Contributor-Directory.git
 cd Open-Source-Contributor-Directory
 ```
 
@@ -66,28 +66,18 @@ This repository includes 3 deliberate starter bugs designed for workshop partici
 
 ### Issue #1: Missing Fallback for Optional Social Links
 - **File**: [`src/components/ContributorCard.tsx`](file:///c:/Users/HP/Open%20Source%20Contributor%20Directory/src/components/ContributorCard.tsx)
-- **Problem**: LinkedIn and Portfolio icons are rendered unconditionally. If a contributor omits `linkedin` or `portfolio` from their JSON data, the card displays broken clickable icons with empty `href` values.
-- **Workshop Fix**: Wrap the `Linkedin` and `Globe` anchor tags in conditional checks:
-  ```tsx
-  {contributor.socials.linkedin && (
-    <a href={contributor.socials.linkedin} ...> ... </a>
-  )}
-  ```
+- **Problem**: LinkedIn and Portfolio icons are rendered unconditionally. If a contributor omits `linkedin` or `portfolio` from their JSON entry in [`src/data/contributors.json`](file:///c:/Users/HP/Open%20Source%20Contributor%20Directory/src/data/contributors.json), the contributor card displays broken clickable icons with empty `href` links.
+- **Your Goal**: Update the component to only render social icon links when the corresponding URL is present in the contributor's profile data.
 
-### Issue #2: Card Layout Height Misalignment (Missing `line-clamp-3`)
+### Issue #2: Card Layout Height Misalignment
 - **File**: [`src/components/ContributorCard.tsx`](file:///c:/Users/HP/Open%20Source%20Contributor%20Directory/src/components/ContributorCard.tsx)
-- **Problem**: When a contributor has a lengthy bio, the card expands vertically, creating uneven grid alignment across rows.
-- **Workshop Fix**: Add Tailwind's `line-clamp-3` utility class to the bio `<p>` tag:
-  ```tsx
-  <p className="text-gray-300 text-sm leading-relaxed mb-5 line-clamp-3">
-    {contributor.bio}
-  </p>
-  ```
+- **Problem**: When a contributor has a lengthy bio paragraph, the card expands vertically beyond adjacent cards, creating uneven grid alignment across rows.
+- **Your Goal**: Truncate long bio descriptions to a maximum of 3 lines so all cards maintain consistent layout alignment.
 
 ### Issue #3: Filter Count Not Resetting on Search Clear
 - **File**: [`src/components/FilterBar.tsx`](file:///c:/Users/HP/Open%20Source%20Contributor%20Directory/src/components/FilterBar.tsx) & [`src/app/page.tsx`](file:///c:/Users/HP/Open%20Source%20Contributor%20Directory/src/app/page.tsx)
-- **Problem**: When clearing the search bar input, the results count badge retains a stale count override instead of displaying the actual updated count.
-- **Workshop Fix**: Update `countToDisplay` in `FilterBar.tsx` to directly render `filteredCount`, or reset `displayCountOverride` to `null` when search query becomes empty `""`.
+- **Problem**: When clearing the search bar input via the clear button or backspace, the results counter badge ("*Showing X of Y contributors*") displays an out-of-sync stale count instead of updating to the actual filtered count.
+- **Your Goal**: Debug the state handling between search clearing and the results badge to ensure the counter always displays the exact count of visible contributors.
 
 ---
 

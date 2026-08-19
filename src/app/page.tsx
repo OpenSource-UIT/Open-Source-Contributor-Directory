@@ -46,13 +46,12 @@ export default function Home() {
 
     // WORKSHOP STARTER ISSUE #3 BUG DEMO:
     // If user typed something, we update `displayCountOverride`.
-    // But when query is cleared (''), we intentionally set a stale override value of 999 or last count
-    // instead of null/reset, causing the FilterBar counter to stay out of sync when search is cleared!
+    // When query is cleared (''), we set a stale override value of 1,
+    // causing the FilterBar counter to stay out of sync when search is cleared!
     if (query !== "") {
       setDisplayCountOverride(filteredContributors.length);
     } else {
-      // Deliberately setting a stale count value when clearing search!
-      setDisplayCountOverride(1); 
+      setDisplayCountOverride(1);
     }
   };
 
@@ -108,7 +107,7 @@ export default function Home() {
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center justify-center gap-4">
           <a
-            href="https://github.com"
+            href="https://github.com/OpenSource-UIT/Open-Source-Contributor-Directory"
             target="_blank"
             rel="noopener noreferrer"
             className="px-7 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold flex items-center gap-2 shadow-lg shadow-indigo-600/25 transition-all hover:scale-105"
@@ -196,7 +195,7 @@ export default function Home() {
           </div>
           <div className="shrink-0">
             <a
-              href="https://github.com"
+              href="https://github.com/OpenSource-UIT/Open-Source-Contributor-Directory"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm flex items-center gap-2 transition-all shadow-lg shadow-emerald-600/20 hover:scale-105"

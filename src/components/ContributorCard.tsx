@@ -64,7 +64,7 @@ export default function ContributorCard({
             Long bios will stretch the card height and cause misaligned grids.
             FIX FOR WORKSHOP PR: Add `line-clamp-3` to the class list below!
         */}
-        <p className="text-slate-600 text-sm leading-relaxed mb-5 line-clamp-3">
+        <p className="text-slate-600 text-sm leading-relaxed mb-5">
           {contributor.bio}
         </p>
 
